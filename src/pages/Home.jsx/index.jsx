@@ -10,7 +10,7 @@ function index() {
       <Header />
 
 {/* Home container */}
-      <div className="px-20 dark:bg-[#121212] dark:text-white">
+      <div className="px-20 max-sm:px-5 dark:bg-[#121212] dark:text-white">
         <Featured />
         <h1 className="text-3xl font-bold my-7">Browse By Property Type</h1>
         <PropertyList />

@@ -13,7 +13,8 @@ function FeaturedProperties() {
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error}</div>;
   return (
-    <div className='flex gap-2   flex-wrap justify-between pb-5 dark:text-white'>
+    <div className='flex gap-2   flex-wrap justify-between pb-5 dark:text-white
+    max-sm:flex-col max-sm:size-full'>
 {data && images.map((img,i)=>{
   return(
     <Card key={i} img={img} name={data[i]?.name} city={data[i].city} startingPrice={data[i]?.cheapestPrice} rating={data[i]?.rating}/>
@@ -27,7 +28,7 @@ export default FeaturedProperties
 
 const Card = ({img,text,desc,name,city,startingPrice,rating}) => {
     return(
-        <div className='flex flex-col gap-4  w-1/5 my-4 '>
+        <div className='flex flex-col gap-4  w-1/5 my-4 max-sm:size-full '>
         <img src={img} alt=""
         className='h-52   rounded-2xl ' />
         <div className='flex flex-col gap-1'>

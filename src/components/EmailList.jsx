@@ -2,7 +2,8 @@ import React from 'react'
 
 function EmailList() {
   return (
-    <div className='w-full h-60 bg-[#003173] dark:bg-[#1E1E1E] flex justify-center items-center flex-col gap-4 text-white '>
+    <div className='w-full h-60 bg-[#003173] dark:bg-[#1E1E1E] flex justify-center items-center flex-col gap-4 text-white
+    max-sm:p-5 '>
          <h1 className='text-5xl font-bold'>Save time, Save money!</h1>
          <p className='text-lg'>sign Up and We'll Send the Best Deals to you</p>
         <div className='flex gap-2'>

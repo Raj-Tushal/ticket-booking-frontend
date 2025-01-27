@@ -18,7 +18,8 @@ function PropertyList() {
   return (
    <>
       {/* img container */}
-    <div className="flex w-full   justify-between flex-wrap dark:text-white ">
+    <div className="flex w-full   justify-between flex-wrap dark:text-white
+     max-sm:flex-col max-sm:gap-7 ">
       {data && images.map((img,i)=>{
         return (
           <Card key={i} img={img} text={data[i]?.type} desc={`${data[i]?.count}+ properties`} />
@@ -35,8 +36,8 @@ export default PropertyList;
 const Card = ({ img, text,desc }) => {
     return(
  
-        <div className="w-1/6 flex flex-col justify-center gap-2  ">
-          <img src={img} alt="" className=" h-32 w-full rounded-3xl" />
+        <div className="w-1/6  flex flex-col justify-center gap-2 max-sm:w-full ">
+          <img src={img} alt="" className=" h-32 max-sm:size-full w-full rounded-3xl" />
           <div>
             <h1 className="font-bold text-2xl">{text}</h1>
             <p>{desc}</p>

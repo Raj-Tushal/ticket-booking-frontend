@@ -7,7 +7,7 @@ function index() {
   return (
     <div className=' w-full dark:bg-[#121212] py-5 flex justify-between px-20 '>
       {/* search form */}
-      <div className='bg-yellow-300 w-fit h-fit flex flex-col gap-2 rounded-lg p-4'>
+      <div className='  bg-yellow-300 w-fit h-fit flex flex-col gap-2 rounded-lg p-4'>
         <h1>Destination</h1>
         <input type="text" placeholder='Madrid' className='rounded-lg p-2' />
 
